@@ -22,7 +22,26 @@
     "README.md",
     "LICENSE"
   ],
+  "author": "Jon Quach <hello@jonquach.com> (https://jonquach.com)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/helpscout/test-utils.git"
+  },
+  "bugs": {
+    "url": "https://github.com/helpscout/test-utils/issues"
+  },
   "license": "MIT",
+  "keywords": [
+    "jest",
+    "enzyme",
+    "react",
+    "test",
+    "utils",
+    "utilities"
+  ],
+  "engines": {
+    "node": ">=8"
+  },
   "peerDependencies": {
     "enzyme": "^3",
     "react": "^16 || ^15",
