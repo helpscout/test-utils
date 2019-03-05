@@ -1,4 +1,4 @@
-# 🤞 Test Utils
+# ✨ Test Utils
 
 > Test utilities for React and JavaScript
 
