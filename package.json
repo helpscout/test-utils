@@ -1,14 +1,16 @@
 {
   "name": "@helpscout/test-utils",
   "version": "0.0.0",
-  "description": "Module generated with Zero",
+  "description": "Test utilities for React and JavaScript",
   "main": "src/index.js",
   "private": false,
   "scripts": {
     "prestart": "zero prestart",
     "build": "zero build",
+    "postbuild": "rm -rf ./dist/__tests__",
+    "dev": "zero test",
     "lint": "zero lint",
-    "test": "zero test",
+    "test": "zero test --coverage",
     "format": "zero format",
     "validate": "zero validate",
     "release": "zero release",
@@ -21,10 +23,24 @@
     "LICENSE"
   ],
   "license": "MIT",
+  "peerDependencies": {
+    "enzyme": "^3",
+    "react": "^16 || ^15",
+    "react-dom": "^16 || ^15"
+  },
   "devDependencies": {
-    "@helpscout/zero": "3.0.2"
+    "@helpscout/zero": "3.0.2",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.10.0",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3"
   },
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "arrify": "^1.0.1",
+    "lodash.has": "^4.5.2",
+    "read-pkg-up": "^4.0.0"
   }
 }
