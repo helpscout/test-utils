@@ -16,7 +16,7 @@ describe('mountWithProvider', () => {
   test('Can render a react-redux connected component', () => {
     const ConnectedComponent = connect()(Component)
 
-    const wrapper = mountWithProvider(<Component />)
+    const wrapper = mountWithProvider(<ConnectedComponent />)
     const el = wrapper.find('.napoleon')
 
     expect(el.length).toBeTruthy()

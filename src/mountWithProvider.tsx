@@ -2,13 +2,13 @@ import * as React from 'react'
 import mount from './mount'
 import * as deps from './deps'
 
-const { Provider, Router } = deps
+const { Provider, Router } = deps as any
 
 const defaultOptions = {}
 
 export function mountWithProvider(Component, options = defaultOptions) {
   const mergedOptions = { ...defaultOptions, options }
-  const { store, ...mountOptions } = mergedOptions
+  const { store, ...mountOptions } = mergedOptions as any
   const mountStore = store || deps.store
 
   const wrapper = mount(
