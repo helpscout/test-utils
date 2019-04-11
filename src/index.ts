@@ -6,3 +6,6 @@ export { default as mount } from './mount'
 export { default as mountWithProvider } from './mountWithProvider'
 export { default as render } from './render'
 export { default as shallow } from './shallow'
+
+// @ts-ignore
+export { default as setupEnzyme } from './setupEnzyme'
