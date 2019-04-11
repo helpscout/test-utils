@@ -1,7 +1,7 @@
 {
   "name": "@helpscout/test-utils",
   "version": "0.0.0",
-  "description": "Test utilities for React and JavaScript",
+  "description": "Test Utils: Handy utils for React and JavaScript testing",
   "main": "src/index.js",
   "private": false,
   "scripts": {
