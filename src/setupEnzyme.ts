@@ -1,7 +1,8 @@
-const { hasAnyDep } = require('./utils')
-
 const setupEnzyme = () => {
+  const { hasAnyDep } = require('./utils')
+
   if (!hasAnyDep('enzyme')) return
+
   const Enzyme = require('enzyme')
   let adapterVersion
 
@@ -17,10 +18,10 @@ const setupEnzyme = () => {
   const Adapter = require(`enzyme-adapter-react-${adapterVersion}`)
 
   Enzyme.configure({ adapter: new Adapter() })
-}
 
-afterEach(() => {
-  document.body.innerHTML = ''
-})
+  afterEach(() => {
+    document.body.innerHTML = ''
+  })
+}
 
 module.exports = setupEnzyme
