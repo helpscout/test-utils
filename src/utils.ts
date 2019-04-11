@@ -10,8 +10,6 @@ const { pkg, path: pkgPath } = readPkgUp.sync({
 
 exports.appDirectory = path.dirname(pkgPath)
 
-exports.fromRoot = (...p) => path.join(exports.appDirectory, ...p)
-
 const hasPkgProp = props => arrify(props).some(prop => has(pkg, prop))
 
 const hasPkgSubProp = pkgProp => props =>

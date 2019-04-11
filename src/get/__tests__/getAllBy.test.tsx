@@ -32,4 +32,19 @@ describe('getAllBy', () => {
 
     expect(nodes.length).toBe(2)
   })
+
+  test('Can retrieve all DOM nodes by tagName', () => {
+    const Component = () => (
+      <div className="napoleon">
+        <span className="tot" />
+        <span className="tot" />
+        <span className="tot" />
+        <span className="tot" />
+      </div>
+    )
+    const wrapper = mount(<Component />)
+    const nodes = getAllBy(wrapper, 'span')
+
+    expect(nodes.length).toBe(4)
+  })
 })

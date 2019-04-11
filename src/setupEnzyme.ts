@@ -19,4 +19,8 @@ const setupEnzyme = () => {
   Enzyme.configure({ adapter: new Adapter() })
 }
 
+afterEach(() => {
+  document.body.innerHTML = ''
+})
+
 module.exports = setupEnzyme
