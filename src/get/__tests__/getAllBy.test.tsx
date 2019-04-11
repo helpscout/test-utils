@@ -47,4 +47,27 @@ describe('getAllBy', () => {
 
     expect(nodes.length).toBe(4)
   })
+
+  test('Returns an empty array if selector cannot be found', () => {
+    const Component = () => (
+      <div className="napoleon">
+        <span className="tot" />
+        <span className="tot" />
+        <span className="tot" />
+        <span className="tot" />
+      </div>
+    )
+    const wrapper = mount(<Component />)
+    const nodes = getAllBy(wrapper, 'button')
+
+    expect(nodes.length).toBe(0)
+  })
+
+  test('Returns an empty array if selector is empty', () => {
+    const Component = () => null
+    const wrapper = mount(<Component />)
+    const nodes = getAllBy(wrapper, 'button')
+
+    expect(nodes.length).toBe(0)
+  })
 })
