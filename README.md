@@ -1,6 +1,7 @@
 # ☂️ Test Utils
 
 [![Build Status](https://travis-ci.org/helpscout/test-utils.svg?branch=master)](https://travis-ci.org/helpscout/test-utils)
+[![Coverage Status](https://coveralls.io/repos/github/helpscout/test-utils/badge.svg?branch=master)](https://coveralls.io/github/helpscout/test-utils?branch=master)
 
 > Test Utils: Handy utils for React and JavaScript testing
 
